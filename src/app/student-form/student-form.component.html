@@ -1,0 +1,35 @@
+<div>
+   Service Values: {{title | json}}
+</div>
+<div>
+  EventEmiiter Values:  {{title2 | json}}
+</div>
+<div class="container">
+
+    <form [formGroup]="studentForm" (ngSubmit)="formSubmit()">
+        <h2>Student Registration </h2>
+        <div>
+            <label>First Name :</label>
+            <input type="text" formControlName="firstName"/>
+        </div>
+        <div>
+            <label>Middle Name :</label>
+            <input type="text" formControlName="middleName" />
+        </div>
+        <div>
+            <label>Last Name :</label>
+            <input type="text" formControlName="lastName" />
+        </div>
+        <div>
+            <label> Roll Number :</label>
+            <input type="text" formControlName="rollNumber" />
+        </div>
+        <div>
+            <label>Gender :</label>
+            <input type="text" formControlName="gender" />
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+</div>
